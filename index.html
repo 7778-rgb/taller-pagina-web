@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <title>Mi Página Principal</title>
+  
+</head>
+<body>
+    <h1>Bienvenido a Mi Sitio Web</h1>
+    <p>La verdad estoy haciendo esto por aburrimiento Ndeah.</p>
+
+    <!-- Imagen -->
+    <h2> nuestro representante:</h2>
+    <img src="jobb.jpg" alt="proceso.jpg" width="400">
+
+    <hr>
+
+    <!-- Enlaces -->
+    <h2>Aca otras cosas:</h2>
+    <ul>
+        <li><a href="OtrasWeas.html">Ir a la Subpágina</a></li>
+        <li><a href="https://www.youtube.com/watch?v=aUMcUbijZug" target="_blank">el mejor youtuber del mundo.</a></li>
+    </ul>
+	<!-- Creditos: -->
+    <h6> hecho por : isaac chacon </h6>
+		<img src="pala.gif" width="200">
+            
+    <script>
+       
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'F12' || 
+               (e.ctrlKey && e.shiftKey && e.key === 'I') || 
+               (e.ctrlKey && e.shiftKey && e.key === 'J') || 
+               (e.ctrlKey && e.key === 'U') || 
+               (e.ctrlKey && e.key === 'u')) {
+                e.preventDefault();
+            }
+        });
+        
+       
+        setInterval(function() {
+            
+            document.body.style.display = 'none';
+            
+            
+            Function("debugger")();
+            
+            
+            document.body.style.display = 'block';
+        }, 50);
+    </script>
+</body>
+</html>

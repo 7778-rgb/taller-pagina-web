@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Subpágina</title>
+ 
+		<link rel="stylesheet" href="main.css">
+	
+</head>
+<body>
+    <h1>Otras Cosas</h1>
+    <p>Me quede sin ideas.</p>
+
+    <!-- Enlace de regreso a la página principal -->
+    <p><a href="index.html">← Con esto vuelves a la pag anterior pibe</a></p>
+	 <script>
+       
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+    
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'F12' || 
+               (e.ctrlKey && e.shiftKey && e.key === 'I') || 
+               (e.ctrlKey && e.shiftKey && e.key === 'J') || 
+               (e.ctrlKey && e.key === 'U') || 
+               (e.ctrlKey && e.key === 'u')) {
+                e.preventDefault();
+            }
+        });
+		 setInterval(function() {
+            Function("debugger")();
+        }, 50);
+    </script>
+</body>
+</html>
